@@ -1,0 +1,23 @@
+{
+    "contact": {
+      "firstName": "Kelly",
+      "lastName": "Summers",
+      "email": "ksummersn@fake.com",
+      "favoriteColor": "Green",
+      "birthday": "03/09/02"
+    },
+    "contact2": {
+      "firstName": "Taylor",
+      "lastName": "Rusinsky",
+      "email": "truskinsky@fake.com",
+      "favoriteColor": "Blue",
+      "birthday": "05/23/99"
+    },
+    "contact3": {
+      "firstName": "Kate",
+      "lastName": "Legge",
+      "email": "klegge@fake.com",
+      "favoriteColor": "Blush Pink",
+      "birthday": "06/01/01"
+    }
+  }
