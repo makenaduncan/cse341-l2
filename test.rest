@@ -11,3 +11,18 @@ GET http://localhost:3000/contacts/626c8c196ef29829e00add05
 ###
 
 GET http://localhost:3000/contacts/626c8c196ef29829e00add06
+
+###
+
+GET https://cse341-l2.herokuapp.com/contacts
+###
+
+GET https://cse341-l2.herokuapp.com/contacts/626c8c196ef29829e00add04
+
+###
+
+GET https://cse341-l2.herokuapp.com/contacts/626c8c196ef29829e00add05
+
+###
+
+GET https://cse341-l2.herokuapp.com/contacts/626c8c196ef29829e00add06
