@@ -26,3 +26,57 @@ GET https://cse341-l2.herokuapp.com/contacts/626c8c196ef29829e00add05
 ###
 
 GET https://cse341-l2.herokuapp.com/contacts/626c8c196ef29829e00add06
+
+###
+
+POST http://localhost:3000/contacts HTTP/1.1 content-type: application/json
+
+{
+    "firstName": "Leopaldo",
+    "lastName": "Diaz",
+    "email": "ldiaz@fake.com",
+    "favoriteColor": "Green",
+    "birthday": "04/16/1987"
+}
+
+###
+
+PUT http://localhost:3000/contacts HTTP/1.1 content-type: application/json
+
+{
+    "firstName": "Kate",
+    "lastName": "Legge",
+    "email": "katelegge16@fake.com",
+    "favoriteColor": "Purple",
+    "birthday": "06/01/01"
+}
+
+###
+
+DELETE http://localhost:3000/contacts/6277131ea85e274705a62da9 HTTP/1.1 
+
+###
+
+POST https://cse341-l2.herokuapp.com/contacts HTTP/1.1 content-type: application/json
+{
+    "firstName": "Leopaldo",
+    "lastName": "Diaz",
+    "email": "ldiaz@fake.com",
+    "favoriteColor": "Green",
+    "birthday": "04/16/1987"
+}
+
+###
+
+PUT https://cse341-l2.herokuapp.com/contacts/626c8c196ef29829e00add06 HTTP/1.1 content-type: application/json
+{
+    "firstName": "Kate",
+    "lastName": "Legge",
+    "email": "katelegge16@fake.com",
+    "favoriteColor": "Purple",
+    "birthday": "06/01/01"
+}
+
+###
+
+DELETE https://cse341-l2.herokuapp.com/contacts/6277131ea85e274705a62da9 HTTP/1.1 

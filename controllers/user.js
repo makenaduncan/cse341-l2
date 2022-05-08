@@ -1,6 +1,6 @@
 const mongodb = require('../db/connect');
 
-const getUser = async (req, res, next) => {
+const getUser = async (res) => {
   const result = await mongodb.getDb().db().collection('User').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
@@ -8,7 +8,7 @@ const getUser = async (req, res, next) => {
   });
 };
 
-const getUsername = async (req, res, next) => {
+const getUsername = async (res) => {
   const result = await mongodb.getDb().db().collection('User').find();
   result.toArray().then((lists) => {
     res.setHeader('Content-Type', 'application/json');
