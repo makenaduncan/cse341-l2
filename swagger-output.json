@@ -5,18 +5,14 @@
     "description": "Description",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "cse341-l2.herokuapp.com",
   "basePath": "/",
-  "schemes": [
-    "http"
-  ],
+  "schemes": ["http", "https"],
   "paths": {
     "/contacts/": {
       "get": {
         "description": "",
-        "produces": [
-          "application/json"
-        ],
+        "produces": ["application/json"],
         "parameters": [],
         "responses": {
           "200": {
