@@ -7,11 +7,12 @@ const port = process.env.PORT || 3000;
 const contactRoutes = require('./routes/contactRoutes');
 
 // app.use('/', require('./routes'));
-app.use(bodyParser.json());
+
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   next();
 });
+app.use(bodyParser.json());
 app.use('/contacts', contactRoutes);
 
 mongodb.initDb((err) => {
