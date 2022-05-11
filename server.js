@@ -8,12 +8,11 @@ const contactRoutes = require('./routes/contactRoutes');
 
 // app.use('/', require('./routes'));
 app.use(bodyParser.json());
-app.use('/contacts', contactRoutes);
 app.use((req, res, next) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
-  res.setHeader('Content-Type', 'application/json');
   next();
 });
+app.use('/contacts', contactRoutes);
 
 mongodb.initDb((err) => {
   if (err) {
