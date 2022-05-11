@@ -9,6 +9,10 @@ const contactRoutes = require('./routes/contactRoutes');
 // app.use('/', require('./routes'));
 app.use(bodyParser.json());
 app.use('/contacts', contactRoutes);
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  next();
+});
 
 mongodb.initDb((err) => {
   if (err) {
